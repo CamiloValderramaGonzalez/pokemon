@@ -22,7 +22,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
                 id: pokemon.id,
             })
         );
-    }, [pokemon.id]);
+    }, [pokemon]);
 
     const onToggleFavorite = () => {
         localFavorites.toggleFavorite({ name: pokemon.name, id: pokemon.id });
